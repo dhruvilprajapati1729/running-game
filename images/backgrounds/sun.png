@@ -1,0 +1,6 @@
+preload() {
+    this.load.image(
+        "sun",
+        "assets/backgrounds/sun.png"
+    );
+}
