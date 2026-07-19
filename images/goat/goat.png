@@ -1,4 +1,0 @@
-this.load.spritesheet("goat", "assets/goat/goat.png", {
-    frameWidth: 64,
-    frameHeight: 64
-});
