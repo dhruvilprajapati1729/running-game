@@ -1,0 +1,6 @@
+preload() {
+    this.load.image(
+        "mountains",
+        "assets/backgrounds/mountains.png"
+    );
+}
