@@ -1,0 +1,6 @@
+preload() {
+    this.load.image(
+        "high-score-panel",
+        "assets/ui/high-score-panel.png"
+    );
+}
