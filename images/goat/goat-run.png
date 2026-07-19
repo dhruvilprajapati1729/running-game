@@ -1,6 +1,1 @@
-preload() {
-    this.load.image(
-        "goat",
-        "assets/goat/goat-run.png"
-    );
-}
+ctx.drawImage(goatImage, x, y, 64, 64);
