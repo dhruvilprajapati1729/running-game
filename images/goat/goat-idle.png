@@ -1,0 +1,6 @@
+preload() {
+    this.load.image(
+        "goat-idle",
+        "assets/goat/goat-idle.png"
+    );
+}
