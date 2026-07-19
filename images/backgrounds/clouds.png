@@ -1,0 +1,6 @@
+preload() {
+    this.load.image(
+        "clouds",
+        "assets/backgrounds/clouds.png"
+    );
+}
