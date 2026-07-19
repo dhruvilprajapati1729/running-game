@@ -1,0 +1,6 @@
+preload() {
+    this.load.image(
+        "coin",
+        "assets/collectibles/coin.png"
+    );
+}
