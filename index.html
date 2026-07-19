@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goat Runner</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="icon" href="images/ui/favicon.png">
+</head>
+
+<body>
+
+<div class="home">
+
+    <img src="images/goat/goat-run.png" class="logo-goat" alt="Goat">
+
+    <h1>🐐 GOAT RUNNER</h1>
+
+    <p>Run through the desert, avoid obstacles and collect coins!</p>
+
+    <div class="buttons">
+
+        <a href="play.html" class="btn">▶ Start Game</a>
+
+        <a href="leaderboard.html" class="btn">🏆 Leaderboard</a>
+
+        <a href="about.html" class="btn">ℹ About</a>
+
+    </div>
+
+</div>
+
+<script>
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+}
+
+</script>
+
+</body>
+</html>
