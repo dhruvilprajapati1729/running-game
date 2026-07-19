@@ -1,0 +1,6 @@
+preload() {
+    this.load.image(
+        "slow-motion",
+        "assets/powerups/slow-motion.png"
+    );
+}
