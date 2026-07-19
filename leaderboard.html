@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Goat Runner | Leaderboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="leaderboard-container">
+
+    <h1>🏆 GOAT RUNNER</h1>
+
+    <h2>Leaderboard</h2>
+
+    <table class="leaderboard-table">
+
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+
+        <tbody id="leaderboardBody">
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <button onclick="clearLeaderboard()" class="btn">
+        🗑 Clear Leaderboard
+    </button>
+
+    <br><br>
+
+    <a href="index.html" class="btn">
+        🏠 Main Menu
+    </a>
+
+</div>
+
+<script>
+
+function loadLeaderboard(){
+
+    let scores = JSON.parse(localStorage.getItem("goatRunnerScores")) || [];
+
+    scores.sort((a,b)=>b.score-a.score);
+
+    const table = document.getElementById("leaderboardBody");
+
+    table.innerHTML="";
+
+    if(scores.length===0){
+
+        table.innerHTML=`
+        <tr>
+            <td colspan="3">
+                No High Scores Yet
+            </td>
+        </tr>
+        `;
+
+        return;
+    }
+
+    scores.slice(0,10).forEach((player,index)=>{
+
+        table.innerHTML += `
+        <tr>
+            <td>${index+1}</td>
+            <td>${player.name}</td>
+            <td>${player.score}</td>
+        </tr>
+        `;
+
+    });
+
+}
+
+function clearLeaderboard(){
+
+    if(confirm("Clear all high scores?")){
+
+        localStorage.removeItem("goatRunnerScores");
+
+        loadLeaderboard();
+
+    }
+
+}
+
+loadLeaderboard();
+
+</script>
+
+</body>
+</html>
