@@ -1,0 +1,6 @@
+preload() {
+    this.load.image(
+        "heart",
+        "assets/powerups/heart.png"
+    );
+}
