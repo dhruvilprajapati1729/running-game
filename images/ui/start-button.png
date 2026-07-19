@@ -1,0 +1,6 @@
+preload() {
+    this.load.image(
+        "start-button",
+        "assets/ui/start-button.png"
+    );
+}
