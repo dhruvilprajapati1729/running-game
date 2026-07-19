@@ -1,0 +1,6 @@
+preload() {
+    this.load.image(
+        "speed-boost",
+        "assets/powerups/speed-boost.png"
+    );
+}
