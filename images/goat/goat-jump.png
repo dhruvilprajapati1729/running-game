@@ -1,0 +1,6 @@
+preload() {
+    this.load.image(
+        "goat-jump",
+        "assets/goat/goat-jump.png"
+    );
+}
